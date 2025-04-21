@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --color-primary: hsl(0, 0%, 0%);
+    --color-secondary: hsl(0, 0%, 50%);
+    --color-text-base: hsl(0, 0%, 100%);
+    --color-bg-primary: hsl(0, 0%, 100%);
+  }
+}
+
+.theme-unum {
+  --color-primary: #015294;
+  --color-secondary: #0a6a36;
+}
+.theme-colonial {
+  --color-primary: #735f91;
+  --color-secondary: #b72b33;
+}
+.brand-unum {
+  --color-primary: #015294;
+  --color-secondary: #0a6a36;
+}
+.brand-colonial {
+  --color-primary: #735f91;
+  --color-secondary: #b72b33;
+}
